@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>UserControllerServlet</servlet-name>
+        <servlet-class>controller.UserControllerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserControllerServlet</servlet-name>
+        <url-pattern>/UserControllerServlet</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>LoginControllerServlet</servlet-name>
+        <url-pattern>/LoginControllerServlet</url-pattern>
+        <url-pattern>/userregister</url-pattern>
+        <url-pattern>/userlogin</url-pattern>
+        <url-pattern>/userLogOff</url-pattern>
+        <url-pattern>/forgotPassword</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
